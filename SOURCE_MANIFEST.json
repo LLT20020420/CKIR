@@ -1,0 +1,337 @@
+{
+  "version": "1.1.0rc1",
+  "hash_algorithm": "SHA-256",
+  "manifest_self_excluded": true,
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 58,
+      "sha256": "19f85034e85720c57592279eef6b574287fcad7d278175f7a487eb7221fa5751"
+    },
+    {
+      "path": "archive/CKIR-SYN02-code-v1/ENVIRONMENT.json",
+      "bytes": 270,
+      "sha256": "3e969f1ef42db46f8adcd5ec9f4fc59273abfff63876958672fefc910c6b2fc1"
+    },
+    {
+      "path": "archive/CKIR-SYN02-code-v1/historical/aligned_head_stage.py",
+      "bytes": 13435,
+      "sha256": "4a8995804f74535b4c14b6fc4d6de02e93c16086d3e90faed0d16270987cb9f0"
+    },
+    {
+      "path": "archive/CKIR-SYN02-code-v1/historical/head_model.py",
+      "bytes": 862,
+      "sha256": "1aaf9ac5730088acaa34b64879652cb48091143239766ed228d07c10c6a57491"
+    },
+    {
+      "path": "archive/CKIR-SYN02-code-v1/historical/joint_stage.py",
+      "bytes": 11297,
+      "sha256": "c49e66d524354800d9aa9d1eaf20c9494a3ff29bd019e545b0c92ea378b1d214"
+    },
+    {
+      "path": "archive/CKIR-SYN02-code-v1/historical/text_model.py",
+      "bytes": 3133,
+      "sha256": "323b226944510499bf55a6fabd6f4b0ade6e6e2f9ad8402675bd4d682719c4ff"
+    },
+    {
+      "path": "archive/CKIR-SYN02-code-v1/historical/text_stage.py",
+      "bytes": 14505,
+      "sha256": "18bacef63e0c1f3de4181c4ba16a1ee4bf2b177a5c18da1f065f07cd0316165f"
+    },
+    {
+      "path": "archive/CKIR-SYN02-code-v1/inspect_package.py",
+      "bytes": 851,
+      "sha256": "7d5d4f848a1f08d4f27d8aee548322dbf0fa63b43f4cb56aff12428e44849800"
+    },
+    {
+      "path": "archive/CKIR-SYN02-code-v1/portable/__init__.py",
+      "bytes": 93,
+      "sha256": "48e9759b9fd2b9a4d22d79ff7637a5416057e3bc8749c96513907bd3f9063b1e"
+    },
+    {
+      "path": "archive/CKIR-SYN02-code-v1/portable/head_model.py",
+      "bytes": 880,
+      "sha256": "90cd1c12a5830559f2c6c125cc5f4ef0e4c8daf37b385aa98de10bcad145b8a5"
+    },
+    {
+      "path": "archive/CKIR-SYN02-code-v1/portable/losses.py",
+      "bytes": 1712,
+      "sha256": "dfd6435833a80166c1005d50624af928e608cf1f815a697b9ddd9e05514c77e5"
+    },
+    {
+      "path": "archive/CKIR-SYN02-code-v1/portable/text_model.py",
+      "bytes": 1459,
+      "sha256": "ea11f0f75a28a0e50d0d898ca0d709a034d53bc776f8a61bb54daa377898adc0"
+    },
+    {
+      "path": "archive/CKIR-SYN02-code-v1/README.md",
+      "bytes": 3225,
+      "sha256": "dfc18978fe2b97585720f1cca0c8952dfa659baa6194e2fef5e593a9a0c6e920"
+    },
+    {
+      "path": "archive/CKIR-SYN02-code-v1/requirements-recorded.txt",
+      "bytes": 161,
+      "sha256": "6f9a1b406a26e377f35073007bfa31a7e47f1d4fd7f55ce055f1fe523117cddf"
+    },
+    {
+      "path": "archive/CKIR-SYN02-code-v1/retained_config.json",
+      "bytes": 3908,
+      "sha256": "e17c8501e51f7e54dc8461059b720fc08bcc469cb2259d556485238b6ee3a3b0"
+    },
+    {
+      "path": "archive/CKIR-SYN02-code-v1/solvers/core.py",
+      "bytes": 8840,
+      "sha256": "23e37de09063760d7dd5ea4698f82e3fbcf700f9ca381c2cb7104e493d1fd91e"
+    },
+    {
+      "path": "archive/CKIR-SYN02-code-v1/solvers/core_v04.py",
+      "bytes": 8427,
+      "sha256": "059e1ce1bc37c781199bffc8778cd423581f6609b87b139b706750bd254a4e1a"
+    },
+    {
+      "path": "archive/CKIR-SYN02-code-v1/SOURCE_INDEX.md",
+      "bytes": 1197,
+      "sha256": "6e03061b231aac0ef5b78b3be64759fdd31e80c0ad0579db7a6bb19ef73100be"
+    },
+    {
+      "path": "archive/CKIR-SYN02-code-v1/source_locations.json",
+      "bytes": 2379,
+      "sha256": "6a909aca8f1d1dbe4c500b3b28f2e61084a585b63f9cb23f76d0ac4548c8e47e"
+    },
+    {
+      "path": "archive/CKIR-SYN02-code-v1/SOURCE_MANIFEST.json",
+      "bytes": 3661,
+      "sha256": "4b38c36b7cbb5c85db6b66ab2526f82b60d5a4c1fdeb8500f251c50c3a3094da"
+    },
+    {
+      "path": "archive/CKIR-SYN02-code-v1/SOURCE_PROVENANCE.json",
+      "bytes": 3201,
+      "sha256": "8393dba383d2a93f9598dcb1a051f992ccb50732091c51ba0515d9d791f9cec2"
+    },
+    {
+      "path": "archive/CKIR-SYN02-code-v1/upstream/simnl/main.py",
+      "bytes": 18160,
+      "sha256": "4e8f80794124a215c18e1d30c215d42557cf89f8503fb296c5d6e0e27a2689cd"
+    },
+    {
+      "path": "archive/CKIR-SYN02-code-v1/upstream/simnl/upstream-commit.json",
+      "bytes": 111,
+      "sha256": "fa44a7865c8a353109bb87831ac328099648751adbe249f1c0c644e2c4e28edc"
+    },
+    {
+      "path": "archive/CKIR-SYN02-code-v1/upstream/simnl/utils.py",
+      "bytes": 10803,
+      "sha256": "5424e5b6f9cf20f1e6b2bc04f0eefc87b9df19f07f394769ccefaffaf7d0371b"
+    },
+    {
+      "path": "archive/CKIR-SYN02-code-v1.zip",
+      "bytes": 40180,
+      "sha256": "56596c42ec5b127a08564b3ac52a9989e095b1a0523757e79d12ec9f517f294c"
+    },
+    {
+      "path": "ASSETS.md",
+      "bytes": 1488,
+      "sha256": "c9e67676e07aaf0cf3a4a9e003b345106f205a038ccd82e1350e05ae83b9d080"
+    },
+    {
+      "path": "CITATION.cff",
+      "bytes": 639,
+      "sha256": "526068f65cd3db83080f714d9a5ff7a7468e54dc4f50dc0b73b2df1574b1aba5"
+    },
+    {
+      "path": "ckir_gda/__init__.py",
+      "bytes": 105,
+      "sha256": "bb966312ad9b7227ae0e70d5238e25700032e8106b13e2063c79319676eba23e"
+    },
+    {
+      "path": "ckir_gda/__main__.py",
+      "bytes": 58,
+      "sha256": "7318f4523e93c7af0322e04cc18bf9181cac194f12ae814cbe2c46c9014dbf49"
+    },
+    {
+      "path": "ckir_gda/cli.py",
+      "bytes": 6856,
+      "sha256": "ec1b1149f00a7596d9af413833b9a572710f06c0cd011f75472448519f1f296f"
+    },
+    {
+      "path": "ckir_gda/evaluate.py",
+      "bytes": 1485,
+      "sha256": "3cf121d2c9d506cde936a0f4041ac0f735d958400d3ffa022458b5b8812cd2f8"
+    },
+    {
+      "path": "ckir_gda/gda.py",
+      "bytes": 2877,
+      "sha256": "605567dcd591cbab52403c6e72b351acea0359dd44c582e1384d02daaaaa177e"
+    },
+    {
+      "path": "ckir_gda/geometry.py",
+      "bytes": 2711,
+      "sha256": "9c37bb64dc639d7d058ff878d1582d136169b045d5d68b7901cf52b8e62f86a1"
+    },
+    {
+      "path": "ckir_gda/io.py",
+      "bytes": 5536,
+      "sha256": "d3de5addb31a6998fe7a9672d26925f1632d18e62d1a2b24a2a8c59a7ee1705f"
+    },
+    {
+      "path": "ckir_gda/losses.py",
+      "bytes": 1712,
+      "sha256": "dfd6435833a80166c1005d50624af928e608cf1f815a697b9ddd9e05514c77e5"
+    },
+    {
+      "path": "ckir_gda/models.py",
+      "bytes": 3263,
+      "sha256": "91ce450b9a9cd48d03e812de9516426aa4dd200a02b685871393a2d4a4a8aa64"
+    },
+    {
+      "path": "ckir_gda/pipeline.py",
+      "bytes": 12571,
+      "sha256": "d379b164bf40799d214b2ec10d133afac0dee556b599d162daadd3d900612e4b"
+    },
+    {
+      "path": "ckir_gda/prepare.py",
+      "bytes": 2531,
+      "sha256": "513d27bffcf9b288893bb6d32fbe64183e257144832c2b9b323b13bf712e91d1"
+    },
+    {
+      "path": "ckir_gda/solvers/__init__.py",
+      "bytes": 66,
+      "sha256": "0d71dcc24247a379f7c330f1e184ff382a8084a3c5278c1387ba6da880e58d49"
+    },
+    {
+      "path": "ckir_gda/solvers/core.py",
+      "bytes": 8840,
+      "sha256": "23e37de09063760d7dd5ea4698f82e3fbcf700f9ca381c2cb7104e493d1fd91e"
+    },
+    {
+      "path": "ckir_gda/solvers/core_v04.py",
+      "bytes": 8607,
+      "sha256": "9a677e5c3f91e54937939d54ba02b947cb2f3aff87dd7740f0d248ad3b6f592c"
+    },
+    {
+      "path": "configs/retained.json",
+      "bytes": 1286,
+      "sha256": "c605faf684d8b9100c5ffbb8f92e6985155bd2babe2aea120ca1bb027dec250d"
+    },
+    {
+      "path": "data/episodes.json",
+      "bytes": 596457,
+      "sha256": "4ac52e52db748e0e6433733c30292fce391cf3d9fb80f910f07bdb691dee7ae6"
+    },
+    {
+      "path": "data/evaluation-labels.json",
+      "bytes": 25153,
+      "sha256": "22e306f882c68bb7a74f2b50bd7ee5040d04d9b85cf8102084a929e85deefeeb"
+    },
+    {
+      "path": "ENVIRONMENT.json",
+      "bytes": 270,
+      "sha256": "3e969f1ef42db46f8adcd5ec9f4fc59273abfff63876958672fefc910c6b2fc1"
+    },
+    {
+      "path": "INPUTS.md",
+      "bytes": 3845,
+      "sha256": "7182553517144c19c249d4c86b58a48237fc0420f6671ad072dd3bf00bef78d4"
+    },
+    {
+      "path": "inspect_package.py",
+      "bytes": 1209,
+      "sha256": "3c8aeee454a6f56d7bfeed9d936c94350fb6567e8a4f15eb571220236ebfee19"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1067,
+      "sha256": "8cc0c411062456cc93bc1edda47cd6df594427713294f0bd75c8213762b17bd6"
+    },
+    {
+      "path": "LICENSES/ProKeR-Apache-2.0.txt",
+      "bytes": 11558,
+      "sha256": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6"
+    },
+    {
+      "path": "LICENSES/SimNL-MIT-reference.txt",
+      "bytes": 1249,
+      "sha256": "752679a925c649f3d9512f02b91dab0166b9cc2e282735b6d8bfe17c1fd38526"
+    },
+    {
+      "path": "provenance/gda-author-commit.json",
+      "bytes": 149,
+      "sha256": "12400b67c74f2974931c4ae581ed56cc3175758a3e43129b0a17229707045fa8"
+    },
+    {
+      "path": "provenance/gda-experiment-driver.py",
+      "bytes": 14003,
+      "sha256": "f36596c7a0f464423c373e38ee487f0defa6184464b653b25bca011275083bba"
+    },
+    {
+      "path": "provenance/gda-proker-unmodified.py",
+      "bytes": 1784,
+      "sha256": "d4cbc2053d57d22a59529f40bfb45fa79ad81318478432bba506dc7b3a26411a"
+    },
+    {
+      "path": "provenance/SimNL-README.md",
+      "bytes": 2616,
+      "sha256": "b662a1e02ba6d68fe9d12d92a1574d5648f8dc774f51e289126c602914b9873e"
+    },
+    {
+      "path": "provenance/trained-score-fusion-driver.py",
+      "bytes": 7114,
+      "sha256": "94eae25d9c8854f801b50fb8d3832dc89ceeca14609be5ef3757b1b2b5117730"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6277,
+      "sha256": "a83c224110435a1e329e6bdb431c20d107e15f70b16ffd08c00c8e777d716497"
+    },
+    {
+      "path": "README.zh-CN.md",
+      "bytes": 1880,
+      "sha256": "6c5b6d86870cd5878f461f17606fe50a5b068c35a2be662bca1c69723fc97d91"
+    },
+    {
+      "path": "RELEASE.json",
+      "bytes": 1983,
+      "sha256": "fdbec3ce82593d9241f31ec08c489122de588ee0877da592c590b1d9350de541"
+    },
+    {
+      "path": "requirements-core.txt",
+      "bytes": 39,
+      "sha256": "89ea92046ced7c2ee8cb5e8dc43602558ddf5a50e7acc669a19b9979b879ef21"
+    },
+    {
+      "path": "requirements-recorded.txt",
+      "bytes": 146,
+      "sha256": "9adf409e067365bd88a51ee9f6a277287527244de8586491510b65481c8836c6"
+    },
+    {
+      "path": "run.py",
+      "bytes": 134,
+      "sha256": "5ef91fa3dd0373229f3f50fcde63f28865dd925740779a6258bc0295763d79d6"
+    },
+    {
+      "path": "SOURCE_INDEX.md",
+      "bytes": 719,
+      "sha256": "91fb7810f9716053873a4356dc1bebb4b5ff529246eaf98cee504bdcd8ade07b"
+    },
+    {
+      "path": "SOURCE_PROVENANCE.json",
+      "bytes": 6068,
+      "sha256": "dfc1f9f8c79837d970e6ef2f836e3668fa8a139a64131bb3a3494fa29700399b"
+    },
+    {
+      "path": "tests/test_release.py",
+      "bytes": 10257,
+      "sha256": "d0e4e743b31917479b0987b38095cf595571d248adce9ca6b4b5f01c2aaba0df"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 2247,
+      "sha256": "805566558134acfcda09e00021d42194da17108cc04d04b872fa085bc0248d7c"
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 2202,
+      "sha256": "c13f83d9995160a673c906ca843e764c7aeaa602eb2a261e6b22b1be38113f01"
+    }
+  ]
+}

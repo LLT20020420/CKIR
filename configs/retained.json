@@ -1,0 +1,56 @@
+{
+  "version": "1.1.0rc1",
+  "scope": "Retained Pets RN50 recipe on frozen precomputed CLIP features",
+  "recorded_dimensions": {
+    "classes": 37,
+    "support": 296,
+    "feature_dim": 1024,
+    "query": 592
+  },
+  "kernels": {
+    "text": {
+      "beta": 2.0,
+      "lambda": 1.0,
+      "tau": 0.08,
+      "alpha": 2.44
+    },
+    "final": {
+      "beta": 16.0,
+      "lambda": 1.0,
+      "tau": 0.03,
+      "alpha": 2.51
+    }
+  },
+  "text_training": {
+    "epochs": 30,
+    "retained_epoch": 25,
+    "batch_size": 256,
+    "lr": 0.0001,
+    "eps": 0.001,
+    "weight_decay": 0.1,
+    "loss": "CE + source reranking + 8*consistency",
+    "scheduler": "cosine,epochs*loader_length"
+  },
+  "head_training": {
+    "steps": 7,
+    "optimizer": "fresh SGD,momentum0.9",
+    "lr": "4*N/lambda_max(S*S.T)",
+    "gamma": 100
+  },
+  "joint_training": {
+    "steps": 7,
+    "head_lr_factor": 0.1,
+    "text_lr": 1e-05,
+    "text_eps": 0.001,
+    "text_weight_decay": 0.1,
+    "loss": "CE of raw CKIR support scores",
+    "optimizer_states": "fresh for both groups"
+  },
+  "fusion": {
+    "rho": 0.95,
+    "gda_alpha": 0.1,
+    "formula": "rho*CKIR+(1-rho)*GDA",
+    "gda_native_dtype": "float32",
+    "combined_dtype": "float64"
+  }
+}

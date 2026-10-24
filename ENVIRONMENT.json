@@ -1,0 +1,11 @@
+{
+  "python": "3.12.14",
+  "metadata_read_at_packaging": "2026-10-24",
+  "platform": "Windows; CUDA execution in original training functions",
+  "packages": {
+    "numpy": "2.5.2",
+    "osqp": "1.1.3",
+    "scipy": "1.18.1",
+    "torch": "2.13.0+cu126"
+  }
+}

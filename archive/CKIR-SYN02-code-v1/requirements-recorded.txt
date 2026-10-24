@@ -1,0 +1,5 @@
+# Versions read from the existing local runtime during packaging. No installation was performed.
+numpy==2.5.2
+osqp==1.1.3
+scipy==1.18.1
+torch==2.13.0+cu126

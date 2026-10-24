@@ -1,0 +1,88 @@
+[
+  {
+    "package_file": "solvers/core.py",
+    "original_project_relative_path": "core.py",
+    "sha256": "23e37de09063760d7dd5ea4698f82e3fbcf700f9ca381c2cb7104e493d1fd91e",
+    "matched_historical_frozen_records": [
+      "text_stage",
+      "aligned_head_stage",
+      "joint_stage"
+    ]
+  },
+  {
+    "package_file": "solvers/core_v04.py",
+    "original_project_relative_path": "core_v04.py",
+    "sha256": "059e1ce1bc37c781199bffc8778cd423581f6609b87b139b706750bd254a4e1a",
+    "matched_historical_frozen_records": [
+      "aligned_head_stage",
+      "joint_stage"
+    ]
+  },
+  {
+    "package_file": "historical/text_model.py",
+    "original_project_relative_path": "analysis/v05-ckir-simnl-training-20261021/model.py",
+    "sha256": "323b226944510499bf55a6fabd6f4b0ade6e6e2f9ad8402675bd4d682719c4ff",
+    "matched_historical_frozen_records": [
+      "text_stage",
+      "joint_stage"
+    ]
+  },
+  {
+    "package_file": "historical/text_stage.py",
+    "original_project_relative_path": "analysis/v05-ckir-simnl-training-20261021/run.py",
+    "sha256": "18bacef63e0c1f3de4181c4ba16a1ee4bf2b177a5c18da1f065f07cd0316165f",
+    "matched_historical_frozen_records": [
+      "text_stage"
+    ]
+  },
+  {
+    "package_file": "historical/head_model.py",
+    "original_project_relative_path": "analysis/v05-ckir-lpp-training-20261021/model.py",
+    "sha256": "1aaf9ac5730088acaa34b64879652cb48091143239766ed228d07c10c6a57491",
+    "matched_historical_frozen_records": [
+      "aligned_head_stage",
+      "joint_stage"
+    ]
+  },
+  {
+    "package_file": "historical/aligned_head_stage.py",
+    "original_project_relative_path": "analysis/v05-ckir-aligned-head-training-20261022/run.py",
+    "sha256": "4a8995804f74535b4c14b6fc4d6de02e93c16086d3e90faed0d16270987cb9f0",
+    "matched_historical_frozen_records": [
+      "aligned_head_stage",
+      "joint_stage"
+    ]
+  },
+  {
+    "package_file": "historical/joint_stage.py",
+    "original_project_relative_path": "analysis/v05-ckir-joint-text-head-20261022/run.py",
+    "sha256": "c49e66d524354800d9aa9d1eaf20c9494a3ff29bd019e545b0c92ea378b1d214",
+    "matched_historical_frozen_records": [
+      "joint_stage"
+    ]
+  },
+  {
+    "package_file": "upstream/simnl/main.py",
+    "original_project_relative_path": "analysis/v05-simnl-mixture-20261021/source-snapshot/main.py",
+    "sha256": "4e8f80794124a215c18e1d30c215d42557cf89f8503fb296c5d6e0e27a2689cd",
+    "matched_historical_frozen_records": [
+      "text_stage"
+    ]
+  },
+  {
+    "package_file": "upstream/simnl/utils.py",
+    "original_project_relative_path": "analysis/v05-simnl-mixture-20261021/source-snapshot/utils.py",
+    "sha256": "5424e5b6f9cf20f1e6b2bc04f0eefc87b9df19f07f394769ccefaffaf7d0371b",
+    "matched_historical_frozen_records": [
+      "text_stage"
+    ]
+  },
+  {
+    "package_file": "upstream/simnl/upstream-commit.json",
+    "original_project_relative_path": "analysis/v05-simnl-mixture-20261021/source-snapshot/upstream-commit.json",
+    "sha256": "fa44a7865c8a353109bb87831ac328099648751adbe249f1c0c644e2c4e28edc",
+    "matched_historical_frozen_records": [
+      "text_stage"
+    ]
+  }
+]

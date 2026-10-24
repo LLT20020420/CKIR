@@ -1,0 +1,134 @@
+{
+  "scope": "Original snapshots retained; runnable modules are explicitly packaged adaptations",
+  "original_code_s1_zip_sha256": "56596c42ec5b127a08564b3ac52a9989e095b1a0523757e79d12ec9f517f294c",
+  "proker_commit": "f2ecb3d2a0d7e0993f977e550286b34f06015edb",
+  "gda_author_commit": "560fe211700964c915442ff98dbe47dd09656a35",
+  "simnl_commit": "a0871bcf31a607a7ec8acc99aff82f41ed7eaff3",
+  "packaging_changes": [
+    "Infer dimensions/device instead of fixed CUDA 37x1024",
+    "Require explicit alpha at score interfaces",
+    "Use package-relative solver imports",
+    "Provide array-based stage drivers without historical external runner imports",
+    "Expose the original float32 KS GDA estimator with fixed alpha; omit validation-grid selection",
+    "Expose unchanged native-score mixture"
+  ],
+  "snapshots": [
+    {
+      "snapshot": "provenance/gda-proker-unmodified.py",
+      "original_project_relative_path": "analysis/v05-gda-mixture-20261021/source-snapshot/gda-proker-unmodified.py",
+      "sha256": "d4cbc2053d57d22a59529f40bfb45fa79ad81318478432bba506dc7b3a26411a"
+    },
+    {
+      "snapshot": "provenance/gda-author-commit.json",
+      "original_project_relative_path": "analysis/v05-gda-mixture-20261021/source-snapshot/upstream-commit.json",
+      "sha256": "12400b67c74f2974931c4ae581ed56cc3175758a3e43129b0a17229707045fa8"
+    },
+    {
+      "snapshot": "provenance/gda-experiment-driver.py",
+      "original_project_relative_path": "analysis/v05-gda-mixture-20261021/run_mix.py",
+      "sha256": "f36596c7a0f464423c373e38ee487f0defa6184464b653b25bca011275083bba"
+    },
+    {
+      "snapshot": "provenance/trained-score-fusion-driver.py",
+      "original_project_relative_path": "analysis/v05-trained-ckir-gda-mixture-20261022/run_mix.py",
+      "sha256": "94eae25d9c8854f801b50fb8d3832dc89ceeca14609be5ef3757b1b2b5117730"
+    },
+    {
+      "snapshot": "archive/CKIR-SYN02-code-v1/ENVIRONMENT.json",
+      "sha256": "3e969f1ef42db46f8adcd5ec9f4fc59273abfff63876958672fefc910c6b2fc1"
+    },
+    {
+      "snapshot": "archive/CKIR-SYN02-code-v1/inspect_package.py",
+      "sha256": "7d5d4f848a1f08d4f27d8aee548322dbf0fa63b43f4cb56aff12428e44849800"
+    },
+    {
+      "snapshot": "archive/CKIR-SYN02-code-v1/README.md",
+      "sha256": "dfc18978fe2b97585720f1cca0c8952dfa659baa6194e2fef5e593a9a0c6e920"
+    },
+    {
+      "snapshot": "archive/CKIR-SYN02-code-v1/requirements-recorded.txt",
+      "sha256": "6f9a1b406a26e377f35073007bfa31a7e47f1d4fd7f55ce055f1fe523117cddf"
+    },
+    {
+      "snapshot": "archive/CKIR-SYN02-code-v1/retained_config.json",
+      "sha256": "e17c8501e51f7e54dc8461059b720fc08bcc469cb2259d556485238b6ee3a3b0"
+    },
+    {
+      "snapshot": "archive/CKIR-SYN02-code-v1/SOURCE_INDEX.md",
+      "sha256": "6e03061b231aac0ef5b78b3be64759fdd31e80c0ad0579db7a6bb19ef73100be"
+    },
+    {
+      "snapshot": "archive/CKIR-SYN02-code-v1/source_locations.json",
+      "sha256": "6a909aca8f1d1dbe4c500b3b28f2e61084a585b63f9cb23f76d0ac4548c8e47e"
+    },
+    {
+      "snapshot": "archive/CKIR-SYN02-code-v1/SOURCE_MANIFEST.json",
+      "sha256": "4b38c36b7cbb5c85db6b66ab2526f82b60d5a4c1fdeb8500f251c50c3a3094da"
+    },
+    {
+      "snapshot": "archive/CKIR-SYN02-code-v1/SOURCE_PROVENANCE.json",
+      "sha256": "8393dba383d2a93f9598dcb1a051f992ccb50732091c51ba0515d9d791f9cec2"
+    },
+    {
+      "snapshot": "archive/CKIR-SYN02-code-v1/historical/aligned_head_stage.py",
+      "sha256": "4a8995804f74535b4c14b6fc4d6de02e93c16086d3e90faed0d16270987cb9f0"
+    },
+    {
+      "snapshot": "archive/CKIR-SYN02-code-v1/historical/head_model.py",
+      "sha256": "1aaf9ac5730088acaa34b64879652cb48091143239766ed228d07c10c6a57491"
+    },
+    {
+      "snapshot": "archive/CKIR-SYN02-code-v1/historical/joint_stage.py",
+      "sha256": "c49e66d524354800d9aa9d1eaf20c9494a3ff29bd019e545b0c92ea378b1d214"
+    },
+    {
+      "snapshot": "archive/CKIR-SYN02-code-v1/historical/text_model.py",
+      "sha256": "323b226944510499bf55a6fabd6f4b0ade6e6e2f9ad8402675bd4d682719c4ff"
+    },
+    {
+      "snapshot": "archive/CKIR-SYN02-code-v1/historical/text_stage.py",
+      "sha256": "18bacef63e0c1f3de4181c4ba16a1ee4bf2b177a5c18da1f065f07cd0316165f"
+    },
+    {
+      "snapshot": "archive/CKIR-SYN02-code-v1/portable/head_model.py",
+      "sha256": "90cd1c12a5830559f2c6c125cc5f4ef0e4c8daf37b385aa98de10bcad145b8a5"
+    },
+    {
+      "snapshot": "archive/CKIR-SYN02-code-v1/portable/losses.py",
+      "sha256": "dfd6435833a80166c1005d50624af928e608cf1f815a697b9ddd9e05514c77e5"
+    },
+    {
+      "snapshot": "archive/CKIR-SYN02-code-v1/portable/text_model.py",
+      "sha256": "ea11f0f75a28a0e50d0d898ca0d709a034d53bc776f8a61bb54daa377898adc0"
+    },
+    {
+      "snapshot": "archive/CKIR-SYN02-code-v1/portable/__init__.py",
+      "sha256": "48e9759b9fd2b9a4d22d79ff7637a5416057e3bc8749c96513907bd3f9063b1e"
+    },
+    {
+      "snapshot": "archive/CKIR-SYN02-code-v1/solvers/core.py",
+      "sha256": "23e37de09063760d7dd5ea4698f82e3fbcf700f9ca381c2cb7104e493d1fd91e"
+    },
+    {
+      "snapshot": "archive/CKIR-SYN02-code-v1/solvers/core_v04.py",
+      "sha256": "059e1ce1bc37c781199bffc8778cd423581f6609b87b139b706750bd254a4e1a"
+    },
+    {
+      "snapshot": "archive/CKIR-SYN02-code-v1/upstream/simnl/main.py",
+      "sha256": "4e8f80794124a215c18e1d30c215d42557cf89f8503fb296c5d6e0e27a2689cd"
+    },
+    {
+      "snapshot": "archive/CKIR-SYN02-code-v1/upstream/simnl/upstream-commit.json",
+      "sha256": "fa44a7865c8a353109bb87831ac328099648751adbe249f1c0c644e2c4e28edc"
+    },
+    {
+      "snapshot": "archive/CKIR-SYN02-code-v1/upstream/simnl/utils.py",
+      "sha256": "5424e5b6f9cf20f1e6b2bc04f0eefc87b9df19f07f394769ccefaffaf7d0371b"
+    }
+  ],
+  "gda_author_reference": {
+    "url": "https://github.com/mrflogs/ICLR24/tree/560fe211700964c915442ff98dbe47dd09656a35",
+    "original_file_sha256": "69d835216dc27cf939c2a409dc649a96654c4a95a975de51794ad5d45789a274",
+    "included": false
+  }
+}

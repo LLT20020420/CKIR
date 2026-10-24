@@ -1,0 +1,45 @@
+{
+  "version": "1.1.0rc1",
+  "author": {
+    "name": "Lingtao Lu",
+    "name_zh": "卢令韬"
+  },
+  "project_license": "MIT",
+  "created_hk": "2026-10-24",
+  "release_status": "LOCAL_RELEASE_CANDIDATE",
+  "public_repository_url": "https://github.com/LLT20020420/CKIR",
+  "doi": null,
+  "scope": "Retained CKIR training/inference from cached frozen CLIP features plus native GDA fusion",
+  "validation": {
+    "unit_tests": 5,
+    "synthetic_cpu_demo": true,
+    "frozen_gradient_and_stage_parameter_parity": true,
+    "saved_condition": {
+      "status": "PASS_SAVED_CONDITION_SCORE_PARITY",
+      "case": "pilot seed2000 label_version1",
+      "queries": 592,
+      "ckir_max_abs_error": 4.912736883966318e-15,
+      "gda_max_abs_error": 0.0,
+      "ckir_predictions_identical": true,
+      "gda_predictions_identical": true,
+      "fusion_predictions_identical": true,
+      "new_training": 0,
+      "query_ground_truth_loaded": false,
+      "new_accuracy_computed": false,
+      "recorded_results_modified": false,
+      "scope": "One existing cached condition compared against its saved scores; not a new performance experiment"
+    }
+  },
+  "source_code_v1_zip_sha256": "56596c42ec5b127a08564b3ac52a9989e095b1a0523757e79d12ec9f517f294c",
+  "manuscript_files_preserved": {
+    "CKIR-GDA中文初稿v2.docx": "48e4c675a1415fb9b1b54259dd1ad0e000d3e8437f4bbae686e33ad6b822def4",
+    "CKIR-GDA中文初稿v2.pdf": "cb4289569da26e0135669ea1f9ad89aec07bed8d1bf26600f18133cd9b28a99c",
+    "CKIR-GDA中文初稿v2.md": "20d7ad6203e66615d892265413bdccc922bc0c49e37c964fc03f74e3a5059a7e",
+    "references-v2.bib": "84b32bef46f7f685534883bb0b8f3231673c754233b87d91b331524eff15e57f",
+    "理论增补说明-v2.md": "97893e2b4bf2582ddeb382cbf1477975aec1b1ed360f1b50f122a54d0650edc9"
+  },
+  "real_dataset_training_runs": 0,
+  "new_accuracy_experiments": 0,
+  "project_name": "CKIR",
+  "publication_status": "REPOSITORY_CREATED_RELEASE_PENDING"
+}

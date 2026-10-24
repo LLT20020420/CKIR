@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite this software and its accompanying CKIR-GDA manuscript when available."
+title: "CKIR: Bounded kernel influence redistribution for frozen CLIP"
+type: software
+authors:
+  - family-names: "Lu"
+    given-names: "Lingtao"
+version: "1.1.0rc1"
+date-released: "2026-10-24"
+license: MIT
+abstract: "Portable three-stage CKIR training, bounded kernel inference, and fixed native-score GDA fusion, with preserved historical source snapshots."
+keywords:
+  - CLIP
+  - few-shot adaptation
+  - bounded kernel influence redistribution
+  - GDA
+repository-code: "https://github.com/LLT20020420/CKIR"

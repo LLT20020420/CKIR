@@ -1,0 +1,168 @@
+{
+  "version": "CKIR-SYN02-code-v1",
+  "input_dimensions": {
+    "classes": 37,
+    "support": 296,
+    "feature_dim": 1024,
+    "query": 592
+  },
+  "text_stage": {
+    "train_kernel": {
+      "beta": 2,
+      "lambda": 1,
+      "tau": 0.08,
+      "alpha": 2.44
+    },
+    "residual_init": "zeros, shape37x1024, float16, template and CuPL",
+    "mixture": [
+      0.45,
+      0.55
+    ],
+    "column_normalizations_per_source": 2,
+    "mixture_renormalized": false,
+    "classification": "CE of raw CKIR support scores; smoothing0",
+    "rerank": {
+      "knn": 3,
+      "scale": 4,
+      "target_class_may_be_in_nearest_set": true
+    },
+    "consistency": {
+      "axis": "class axis, dim1 of d-by-C matrices",
+      "cosine_eps": 1e-07,
+      "feature_axis_reduction": "mean",
+      "multiplier": 8
+    },
+    "optimizer": {
+      "type": "AdamW",
+      "lr": 0.0001,
+      "eps": 0.001,
+      "weight_decay": 0.1
+    },
+    "epochs": 30,
+    "retained_epoch": 25,
+    "batch_size": 256,
+    "shuffle": true,
+    "drop_last": false,
+    "cosine_steps": 60,
+    "fit_seed": "234000+100*support_seed+label_version"
+  },
+  "aligned_head_stage": {
+    "kernel": {
+      "beta": 16,
+      "lambda": 1,
+      "tau": 0.03,
+      "alpha": 2.51
+    },
+    "W_init": "zeros,37x1024,float32",
+    "b_init": "zeros,37,float32",
+    "gamma_init": "100,37,float64",
+    "optimizer": "new SGD,momentum0.9",
+    "lr": "4*N/lambda_max(S*S.T)",
+    "updates": 7,
+    "loss": "full-support CE only",
+    "text": "load retained epoch25; frozen"
+  },
+  "joint_stage": {
+    "start": "retained text epoch25 and aligned head step7",
+    "head_optimizer": "new SGD,momentum0.9",
+    "head_lr_factor": 0.1,
+    "text_optimizer": {
+      "type": "new AdamW",
+      "lr": 1e-05,
+      "eps": 0.001,
+      "weight_decay": 0.1
+    },
+    "updates": 7,
+    "retained_step": 7,
+    "gamma": 100,
+    "loss": "full-support CE only; no rerank/consistency",
+    "update_order": "one backward from shared pre-update state; head.step then text.step"
+  },
+  "kernel": {
+    "dtype": "CPU float64",
+    "diagonal_jitter_attempts": [
+      0,
+      1e-10,
+      1e-08,
+      1e-06
+    ],
+    "gradient": "2*(A*w-k)",
+    "projected_gradient": "maxabs(w-clip(w-gradient,-tau,tau))",
+    "pg_tolerance": "1e-7*(1+maxabs(k))",
+    "box_tolerance": 1e-10,
+    "objective_tolerance": "1e-8*(1+abs(clipped_initial_objective))"
+  },
+  "text_support_solver": {
+    "engine": "L-BFGS-B",
+    "ftol": 1e-12,
+    "gtol": 1e-10,
+    "maxiter_attempts": [
+      2000,
+      4000
+    ],
+    "maxfun_attempts": [
+      10000,
+      20000
+    ],
+    "refinement": "exact free block if needed, otherwise up to10000 coordinate sweeps"
+  },
+  "final_solver": {
+    "engine": "OSQP builtin",
+    "P": "2*A",
+    "q": "-2*k",
+    "constraint_matrix": "I",
+    "eps_abs": 1e-10,
+    "eps_rel": 1e-10,
+    "max_iter_attempts": [
+      20000,
+      40000
+    ],
+    "adaptive_rho": true,
+    "adaptive_rho_interval": 50,
+    "rho": 0.1,
+    "scaling": 10,
+    "polishing": true,
+    "polish_refine_iter": 10,
+    "delta": 1e-09,
+    "time_limit_seconds": 30,
+    "raw_box_tolerance": 1e-08,
+    "per_query_start": "clip(w0), dualzeros; reusable factorization"
+  },
+  "fixed_fusion": {
+    "rho": 0.95,
+    "gda_alpha": 0.1
+  },
+  "development_support_seeds": [
+    1000,
+    1001,
+    1002,
+    1003,
+    1004,
+    1005,
+    1006,
+    1007,
+    1008,
+    1009,
+    1010,
+    1011
+  ],
+  "pilot_support_seeds": [
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009
+  ],
+  "label_versions": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "package_scope": "Frozen implementation disclosure and reusable primitives. No data, checkpoints or new evaluation included."
+}

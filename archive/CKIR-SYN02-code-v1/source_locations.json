@@ -1,0 +1,100 @@
+[
+  {
+    "topic": "完整重排序损失",
+    "file": "upstream/simnl/main.py",
+    "symbol": "adaptive_reranking_loss",
+    "line_start": 233,
+    "line_end": 265
+  },
+  {
+    "topic": "交叉熵与默认零平滑",
+    "file": "upstream/simnl/utils.py",
+    "symbol": "SmoothCrossEntropy",
+    "line_start": 148,
+    "line_end": 159
+  },
+  {
+    "topic": "文字残差零初始化",
+    "file": "historical/text_model.py",
+    "symbol": "CKIRText.__init__",
+    "line_start": 29,
+    "line_end": 35
+  },
+  {
+    "topic": "两次归一化与45/55混合",
+    "file": "historical/text_model.py",
+    "symbol": "CKIRText.positive",
+    "line_start": 37,
+    "line_end": 42
+  },
+  {
+    "topic": "按类别轴计算文字一致性",
+    "file": "historical/text_model.py",
+    "symbol": "CKIRText.consistency",
+    "line_start": 51,
+    "line_end": 54
+  },
+  {
+    "topic": "第一阶段实际训练",
+    "file": "historical/text_stage.py",
+    "symbol": "fit",
+    "line_start": 53,
+    "line_end": 94
+  },
+  {
+    "topic": "第一阶段支持QP精修",
+    "file": "historical/text_stage.py",
+    "symbol": "support_weights",
+    "line_start": 27,
+    "line_end": 51
+  },
+  {
+    "topic": "W/b/gamma初始化",
+    "file": "historical/head_model.py",
+    "symbol": "LPHead.__init__",
+    "line_start": 7,
+    "line_end": 11
+  },
+  {
+    "topic": "第二阶段实际训练",
+    "file": "historical/aligned_head_stage.py",
+    "symbol": "fit",
+    "line_start": 67,
+    "line_end": 127
+  },
+  {
+    "topic": "第三阶段实际联合更新",
+    "file": "historical/joint_stage.py",
+    "symbol": "fit",
+    "line_start": 61,
+    "line_end": 112
+  },
+  {
+    "topic": "L-BFGS-B与验收",
+    "file": "solvers/core.py",
+    "symbol": "solve_box",
+    "line_start": 75,
+    "line_end": 111
+  },
+  {
+    "topic": "投影梯度残差",
+    "file": "solvers/core.py",
+    "symbol": "projected_gradient",
+    "line_start": 50,
+    "line_end": 52
+  },
+  {
+    "topic": "OSQP固定设置",
+    "file": "solvers/core_v04.py",
+    "symbol": "BoxWorkspace._new_solver",
+    "line_start": 50,
+    "line_end": 59
+  },
+  {
+    "topic": "OSQP每查询初始化及验收",
+    "file": "solvers/core_v04.py",
+    "symbol": "BoxWorkspace.solve",
+    "line_start": 61,
+    "line_end": 114
+  }
+]
